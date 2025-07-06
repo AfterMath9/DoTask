@@ -1,73 +1,93 @@
-# Welcome to your Lovable project
+# DoTask
 
-## Project info
+A modern task management application built with React, TypeScript, and Supabase. DoTask provides a comprehensive solution for managing tasks, events, team collaboration, and analytics with a beautiful, responsive interface.
 
-**URL**: https://lovable.dev/projects/9ee0f77c-34e4-4304-8b8c-1ac4e50970ae
+## Features
 
-## How can I edit this code?
+- 📋 **Task Management** - Create, edit, and organize tasks with a Kanban board interface
+- 📅 **Calendar Integration** - Schedule and manage events alongside your tasks
+- 👥 **Team Collaboration** - Invite team members and collaborate on projects
+- 📊 **Analytics Dashboard** - Track productivity and project progress
+- 🤖 **AI Assistant** - Get intelligent suggestions and help with task management
+- 🎨 **Modern UI** - Clean, responsive design with dark/light theme support
+- 🔐 **Secure Authentication** - User authentication and profile management
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+### Prerequisites
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9ee0f77c-34e4-4304-8b8c-1ac4e50970ae) and start prompting.
+- Node.js (v16 or higher)
+- npm or yarn
+- Supabase account (for backend services)
 
-Changes made via Lovable will be committed automatically to this repo.
+### Installation
 
-**Use your preferred IDE**
+1. Clone the repository:
+```bash
+git clone https://github.com/AfterMath9/DoTask.git
+cd DoTask
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+2. Install dependencies:
+```bash
+npm install
+```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+3. Set up environment variables:
+```bash
+cp .env.example .env.local
+```
+Add your Supabase credentials to the `.env.local` file.
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+4. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Tech Stack
 
-**Use GitHub Codespaces**
+This project is built with modern web technologies:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **Frontend Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Backend**: Supabase (Database, Authentication, Real-time)
+- **State Management**: React Query (TanStack Query)
+- **Routing**: React Router DOM
+- **Charts**: Recharts
+- **Icons**: Lucide React
 
-## What technologies are used for this project?
+## Project Structure
 
-This project is built with:
+```
+src/
+├── components/          # Reusable UI components
+├── pages/              # Application pages
+├── hooks/              # Custom React hooks
+├── contexts/           # React contexts
+├── integrations/       # External service integrations
+├── lib/                # Utility functions
+└── main.tsx           # Application entry point
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Available Scripts
 
-## How can I deploy this project?
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-Simply open [Lovable](https://lovable.dev/projects/9ee0f77c-34e4-4304-8b8c-1ac4e50970ae) and click on Share -> Publish.
+## Contributing
 
-## Can I connect a custom domain to my Lovable project?
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-Yes, you can!
+## License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
